@@ -1,6 +1,8 @@
-
 export default function Home() {
-  <div>
-    <h1>ola mundo</h1>
-  </div>
+  return (
+    <div>
+      <h1 className=" flex bg-black pt-2 dark:text-red-500">ola mundo</h1>
+      <p>teste</p>
+    </div>
+  )
 }
