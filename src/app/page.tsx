@@ -1,9 +1,10 @@
 import { SettingsTabs } from '@/components/SettingsTabs'
 import * as Input from '@/components/Input'
-import { Mail } from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import * as FileInput from '@/components/Form/FileInput/Index'
 import { Select } from '@/components/Form/Select/index'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
+import { Textarea } from '@/components/Form/Textarea'
 
 export default function Home() {
   return (
@@ -140,8 +141,44 @@ export default function Home() {
                 Write a short introduction.
               </span>
             </label>
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <Select placeholder="" defaultValue="normal">
+                  <SelectItem value="normal" text="Normal Text" />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+                <div className="flex items-center gap-1">
+                  <button type="button" className="p-2 hover:bg-zinc-50">
+                    <Bold className="size-4 text-zinc-500" strokeWidth={3} />
+                  </button>
 
-            <div></div>
+                  <button type="button" className="p-2 hover:bg-zinc-50">
+                    <Italic className="size-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+
+                  <button type="button" className="p-2 hover:bg-zinc-50">
+                    <Link className="size-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+
+                  <button type="button" className="p-2 hover:bg-zinc-50">
+                    <List className="size-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+
+                  <button type="button" className="p-2 hover:bg-zinc-50">
+                    <ListOrdered
+                      className="size-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                </div>
+              </div>
+              <Textarea
+                id="bio"
+                defaultValue={
+                  'Im a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development.'
+                }
+              />
+            </div>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
