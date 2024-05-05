@@ -142,28 +142,28 @@ export default function Home() {
                   <SelectItem value="md" text="Markdown" />
                 </Select>
                 <div className="flex items-center gap-1">
-                  <button type="button" className="p-2 hover:bg-zinc-50">
+                  <Button type="button" variant="ghost">
                     <Bold className="size-4 text-zinc-500" strokeWidth={3} />
-                  </button>
+                  </Button>
 
-                  <button type="button" className="p-2 hover:bg-zinc-50">
+                  <Button type="button" variant="ghost">
                     <Italic className="size-4 text-zinc-500" strokeWidth={3} />
-                  </button>
+                  </Button>
 
-                  <button type="button" className="p-2 hover:bg-zinc-50">
+                  <Button type="button" variant="ghost">
                     <Link className="size-4 text-zinc-500" strokeWidth={3} />
-                  </button>
+                  </Button>
 
-                  <button type="button" className="p-2 hover:bg-zinc-50">
+                  <Button type="button" variant="ghost">
                     <List className="size-4 text-zinc-500" strokeWidth={3} />
-                  </button>
+                  </Button>
 
-                  <button type="button" className="p-2 hover:bg-zinc-50">
+                  <Button type="button" variant="ghost">
                     <ListOrdered
                       className="size-4 text-zinc-500"
                       strokeWidth={3}
                     />
-                  </button>
+                  </Button>
                 </div>
               </div>
               <Textarea
