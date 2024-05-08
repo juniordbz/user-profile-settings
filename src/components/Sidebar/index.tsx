@@ -11,7 +11,7 @@ import { Button } from '../Button'
 
 export function Sidebar() {
   return (
-    <Collapsible.Root className="fixed left-0 right-0 top-0 z-20 flex flex-col gap-6 border-b border-zinc-200 bg-white px-5 py-4 data-[state=open]:bottom-0 lg:inset-auto  lg:w-80 lg:border-r lg:py-8 lg:data-[state=closed]:bottom-0">
+    <Collapsible.Root className="fixed left-0 right-0 top-0 z-20 flex flex-col gap-6 border-b border-zinc-200 bg-white px-5 py-4 data-[state=open]:bottom-0 lg:inset-auto lg:h-screen  lg:w-80 lg:border-r lg:py-8 ">
       <div className="flex items-center justify-between">
         <Logo />
         <Collapsible.Trigger asChild className="lg:hidden">
