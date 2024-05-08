@@ -42,10 +42,10 @@ export function FileItem({ name, size, state }: FileItemProps) {
   const { container, icon, deleteButton } = fileItem({ state })
 
   function shortenFileName(fullFileName: string) {
-    if (fullFileName.length <= 25) {
+    if (fullFileName.length <= 20) {
       return fullFileName
     }
-    const fileName = fullFileName.substring(0, 25)
+    const fileName = fullFileName.substring(0, 20)
     const extension = fullFileName.split('.').pop()
     return `${fileName}...${extension}`
   }
@@ -59,17 +59,17 @@ export function FileItem({ name, size, state }: FileItemProps) {
       {state === 'error' ? (
         <div className="flex flex-1 flex-col items-start gap-1">
           <div className="flex flex-col">
-            <span className="text-error-700 text-sm font-medium">
+            <span className="text-sm font-medium text-error-700">
               Upload failed, please try again.
             </span>
 
-            <span className="text-error-600 text-sm">
+            <span className="text-sm text-error-600">
               {shortenFileName(name)}
             </span>
           </div>
           <button
             type="button"
-            className="text-error-700 hover:text-error-900 text-sm font-semibold"
+            className="text-sm font-semibold text-error-700 hover:text-error-900"
           >
             Try again
           </button>
