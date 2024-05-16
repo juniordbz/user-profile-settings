@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -44,8 +45,8 @@ const config: Config = {
 
       keyframes: {
         slideDownAndFade: {
-          from: { opacity: 0, transforme: 'translateY(-2px)' },
-          to: { opacity: 1, transforme: 'translateY(0)' },
+          from: { opacity: '0', transforme: 'translateY(-2px)' },
+          to: { opacity: '1', transforme: 'translateY(0)' },
         },
         // slideUpAndFade: {
         //   from: { opacity: 1 },
