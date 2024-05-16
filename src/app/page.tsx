@@ -17,7 +17,7 @@ export default function Home() {
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col ">
-        <div className=" flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 lg:flex-row lg:items-center dark:border-zinc-700">
+        <div className=" flex flex-col justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-700 lg:flex-row lg:items-center">
           <div className="space-y-1">
             <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
               Personal info
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form">
             <label
               htmlFor="firstName"
-              className="text-sm font-medium text-zinc-700 dark:text-zinc-300 dark:text-zinc-300"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
             >
               Name
             </label>
@@ -54,7 +54,7 @@ export default function Home() {
 
               <label
                 htmlFor="lastName"
-                className="lg text-sm font-medium text-zinc-700 lg:sr-only dark:text-zinc-300 dark:text-zinc-300"
+                className="lg text-sm font-medium text-zinc-700 dark:text-zinc-300 lg:sr-only"
               >
                 Last name
               </label>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="flex flex-col gap-3 pt-5 lg:grid lg:grid-cols-form">
             <label
               htmlFor="email"
-              className="text-sm font-medium text-zinc-700 dark:text-zinc-300 dark:text-zinc-300"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
             >
               Email adress
             </label>
